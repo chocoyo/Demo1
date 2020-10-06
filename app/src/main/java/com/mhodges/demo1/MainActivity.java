@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    //Vibrate phone for X milliseconds
     private void Vibrate(int milliseconds) {
         if (Build.VERSION.SDK_INT >= 26) {
             ((Vibrator) getSystemService(VIBRATOR_SERVICE)).vibrate(VibrationEffect.createOneShot(milliseconds, VibrationEffect.DEFAULT_AMPLITUDE));
